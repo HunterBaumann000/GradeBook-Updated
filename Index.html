@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script
+            src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous">
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Grade.css"><meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="../../AppData/Local/Temp/bootstrap.js"></script>
+
+    <meta charset="UTF-8">
+    <title> Grade Book App </title>
+</head>
+<body>
+
+<fieldset>
+    <legend>Grade Book Application</legend>
+
+    <form id="userForm">
+
+        <div class="form-group">
+            <label for="firstName">Enter Your First Name</label>
+            <input name="first" id="firstName" type="text" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="lastName">Enter Your Last Name</label>
+            <input name="last" id="lastName" type="text" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="pointsEarned">Enter the Points Earned on Assignment</label>
+            <input name="earned" id="pointsEarned" type="number" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="pointsPossible">Enter the Total Points Possible</label>
+            <input name="possible" id="pointsPossible" type="number" class="form-control">
+        </div>
+
+        <button class="btn btn-primary">Calculate</button>
+    </form>
+</fieldset>
+
+<button id="btn sortNameBtn">Sort Students' by Name</button>
+<button id="btn sortPercentBtn">Sort Students' by Grade</button>
+
+<p id="finalAnswer"></p>
+
+<p id="sorted"></p>
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+<script src="Grade.js"></script>
+
+</html>
